@@ -1,10 +1,12 @@
-"use client"
+"use client";
 
-import { login, logout } from "@/lib/actions/auth";
+import { logout } from "@/lib/actions/auth";
 
-export const SignOutbutton = ()=>{
-
-     return <button onClick={()=>{logout()}}> Sign out!</button>
-    
-
-}
+export const SignOutbutton = () => (
+  <button
+    onClick={() => logout()}
+    className="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700"
+  >
+    Sign out
+  </button>
+);
