@@ -1,15 +1,21 @@
 "use server";
 
-import Image from "next/image";
 import { auth } from "@/auth";
 import { SignInbutton } from "@/components/Sign-in";
 import { SignOutbutton } from "@/components/Sign-Out";
+import { redirect } from "next/navigation";
 
 export default async function Home() {
   const session = await auth();
   console.log(session);
 
   if (session) {
+
+
+    redirect("/dashboard")
+
+
+    
     return (
       <div>
         <p>Hey, thanks for signing up here!</p>
@@ -30,9 +36,12 @@ export default async function Home() {
     );
   }
   return (
-    <div className="text-3xl font-bold underline text-orange-600">
-      <p>You are not sign in</p>
-      <SignInbutton />
+    <div className="min-h-screen flex items-center justify-center bg-gray-50">
+      <div className="p-8 bg-white rounded-lg shadow-md text-center">
+        <h1 className="text-3xl font-bold mb-4">Pizza Dashboard</h1>
+        <p className="mb-6">Sign in to manage your pizza orders!</p>
+        <SignInbutton />
+      </div>
     </div>
   );
 }
