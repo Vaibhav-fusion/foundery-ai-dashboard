@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Vaibhav Singh
 
-## Getting Started
 
-First, run the development server:
+# 🍕 Pizza Dashboard
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+A modern restaurant management dashboard with Google OAuth authentication, order tracking, and analytics.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+hosted-link- 
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ✨ Features
 
-## Learn More
+- **Google OAuth Login** - Secure authentication
+- **Order Management** - Track pizza orders with status badges
+- **Data Visualization** - Key metrics at a glance
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🛠 Tech Stack->
+- **Framework**: Next.js 14
+- **Styling**: Tailwind CSS + shadcn/ui
+- **Authentication**: NextAuth.js
+- **Icons**: Lucide React-icons
+- **Deployment**: Vercel
 
-## Deploy on Vercel
+working on local-device guide->
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+requred knowlegde-Google OAuth and Nextjs
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1>setup google console of Oauth
+2>create a .env.local file 
+3>setup with the folowing 
+
+GOOGLE_CLIENT_ID=[your google cleint id]
+GOOGLE_CLIENT_SECRET=[your google client secret ]
+AUTH_SECRET=[generate by authjs]
+
+
+## chalenges 
+1>setting up Google OAuth - very difficult to even navigate on google console as first time doing , if it would have been github this project would be breeze
+2>Next-Auth - difficult to read  documentation , i have to rely on youtube video to figure this out 
+3>use client and server - i am very new to Next js and always get server and client error but this project teaches me alot 
+
+## Improvements->
+
+1->I can design and comeup with even better UI 
+2->Adding responsiveness
+3->adding more funtionality for fun 
+
+
+
+
