@@ -103,7 +103,6 @@ export default function Ordershandling({ user }) {
     });
   };
 
-  // Updated StatusBadge component with your color scheme
   const StatusBadge = ({ status }) => {
     const statusColors = {
       Pending: "bg-gray-500/20 text-gray-200",
