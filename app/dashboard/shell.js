@@ -4,7 +4,7 @@ import { Pizza, Home, Utensils } from "lucide-react";
 import { SignOutButton } from "@/components/Sign-Out";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
-export function DashboardShell({ children, user }) {
+export function DashboardShell({  user }) {
   return (
     <div >
 
@@ -31,7 +31,7 @@ export function DashboardShell({ children, user }) {
               </span>
             </Link>
           </nav>
-          
+
           <div className="flex items-center gap-4">
             <button className="relative group">
               <Avatar className="w-8 h-8 border-2 border-gray-800 group-hover:border-rose-500 transition-all duration-300">
