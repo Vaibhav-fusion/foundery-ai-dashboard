@@ -2,11 +2,16 @@
 
 import { login } from "@/lib/actions/auth";
 import { Button } from "@/components/ui/button";
+import { FcGoogle } from "react-icons/fc";
+
 
 export const SignInbutton = () => (
- <Button onClick={() => login()}  className="p-5 text-0. text-black bg-gray-200 hover:text-white hover:bg-black hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out"
-  >
-  &nbsp;&nbsp;Sign in with Google&nbsp;&nbsp;
+ <Button onClick={() => login()}  className="w-full bg-gray-800 hover:bg-gray-700 border border-gray-700 text-gray-200 font-medium py-3 rounded-lg transition-colors"
+    >
+      <div className="flex items-center justify-center gap-3">
+        <FcGoogle className="w-5 h-5" />
+        <span>Continue with Google</span>
+      </div>
 </Button>
 
 );

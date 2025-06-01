@@ -1,10 +1,10 @@
-"use client";
+"use server";
 // import { SignInButton } from "@/components/auth/sign-in-button";
 import { SignInbutton } from "@/components/Sign-in";
 import { auth } from "@/auth";
 import { redirect } from "next/navigation";
 import { Pizza } from "lucide-react";
-import { FcGoogle } from "react-icons/fc";
+// import { FcGoogle } from "react-icons/fc";
 
 export default async function Home() {
   const session = await auth();
@@ -39,7 +39,7 @@ export default async function Home() {
               or
             </div>
           </div>
-          
+
 {/* no email working due to no bakckend thingy */}
           <div className="space-y-4">
             <input
